@@ -39,7 +39,7 @@ class CBCNewsSkill(MycroftSkill):
     def handle_intent(self, message):
         try:
 
-            data = feedparser.parse("http://www.cbc.ca/podcasting/includes/hourlynews.xml")
+            data = feedparser.parse("http://podcasts.files.bbci.co.uk/p02nrsmt.rss")
             self.speak_dialog('cbc.news')
             time.sleep(5)
 
