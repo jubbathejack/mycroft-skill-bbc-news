@@ -39,7 +39,7 @@ class BBCNewsSkill(MycroftSkill):
     def handle_intent(self, message):
         try:
 
-            data = feedparser.parse("http://podcasts.files.bbci.co.uk/p02nq0gn.rss")
+            data = feedparser.parse("http://wsrss.bbc.co.uk/bizdev/bbcminute/bbcminute.rss")
             self.speak_dialog('bbc.news')
             time.sleep(5)
 
